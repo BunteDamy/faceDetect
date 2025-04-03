@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCR Sonuçları</title>
+</head>
+<body>
+    <h1>OCR Sonuçları</h1>
+    <img src="{{ url_for('download_file', filename=image_file) }}" alt="OCR İşlenmiş Resim" style="max-width: 100%;">
+    <br><br>
+    <a href="{{ url_for('download_file', filename=txt_file) }}">OCR ile Bulunan Metni İndir</a>
+</body>
+</html>
